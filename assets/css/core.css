@@ -1,0 +1,155 @@
+
+.grid-tables {
+    grid-template-columns: 30px 1fr 1fr 2fr 2fr 1fr 1fr; 
+}
+.grid-menu {
+    grid-template-columns: 250px 1fr 1fr 1fr 1fr 2fr;
+}
+
+.cust-layout {
+    grid-template-columns: 250px auto;
+}
+
+@media only screen and (min-width: 768px) {
+    /*no mobile*/
+    .grid-40-60 {
+        grid-template-columns: 40% 60%;
+    }
+    .grid-10-90 {
+        grid-template-columns: 20% 80%;
+    }  
+    .grid-40-30-30 {
+        grid-template-columns: 40% 30% 30%;
+    }
+}
+
+.nav {
+    border-top:  6px solid #feeffa;
+}
+
+.nav-holder {
+    display:  flex;
+    flex-direction:  row;
+    list-style-type: none;
+    align-items: center;
+}
+
+.nav-holder li:nth-of-type(2) {
+    flex-grow: 1;
+}
+
+.nav-logo {
+    margin:  10px 50px;
+}
+
+.site-links, .menu-links{
+    display:  inline;
+}
+
+.site-links li {
+    display: inline;
+    margin: 0 20px;
+    width:  300px;
+    list-style-type: none;
+}
+
+.nav-icons {
+    float:  right;
+    margin-right: 80px;
+    display: flex;
+    list-style-type: none;
+    width:  200px;
+    font-size: 16px;
+}
+
+.footer.content {
+    max-width:  1200px;
+    margin: 0 auto;
+}
+
+.footer_social_links {
+    background: #ffeffa;
+    padding: 10px 80px;
+    line-height: 13px;
+}
+
+.social-links li {
+    display: inline-block;
+    padding-right: 5px;
+    margin-bottom: 0px;
+}
+
+.customer-links-center {
+    display: flex;
+    margin:  40px 0;
+}
+
+.linked {
+    margin-right: 30px;
+    margin-left: 30px;
+    min-width: 200px;
+}
+
+.linked li:nth-of-type(1) {
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.linked ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.linked li {
+    line-height: 2.5em;
+    list-style: none;
+    font-size: 17px;
+    font-weight: 300;
+    color:  #333;
+}
+
+.copyright {
+    font-size:  16px;
+}
+
+.newsletter-msg {
+    font-size: 17px;
+}
+
+div.block.newsletter .action.subscribe span {
+    display: none !important;
+}
+
+.page-footer input#newsletter {
+    background: #dea1fe;
+    color: #fff;
+    display: inline-block;
+    padding: 0 20px !important;
+    margin: 0 !important;
+    height: 50px;
+    border-radius: 40px;
+    font-size: 14px;
+}
+
+.customer-links-center {
+    flex-direction: column;
+}
+
+.linked ul {
+    text-align:  center;
+}
+
+.linked li {
+    text-align:  center;
+}
+
+.middlePush {
+    position: absolute;
+    left: 50%;
+    top: 125px;
+    transform: translate(-50%, 0%);
+}

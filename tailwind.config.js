@@ -1,0 +1,68 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./components/**/*.{js,vue,ts}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./nuxt.config.{js,ts}",
+    "./app.vue",
+  ],
+  screens: {
+    xs: {max: '767px'},
+    sm: {min: '640px'},
+    md: {min: '768px'},
+    lg: {min: '1040px'},
+    xl: {min: '1200px'},
+    xl2: {min: '1536px'}, 
+    ms: {max: '767px'},    
+  },
+  theme: {
+    extend: {
+      colors: {
+        primary: '#270A4B',
+        secondary: '#E8C36D',
+        dark: '#110734',
+        'jpink': '#fabbd7',
+        'jpinklt': '#ffeffa',
+        'jlav': '#dea1fe',
+        'jlavlt': '#fae1fe',
+        'jlavpale': '#f9f7fb',
+        'jgrey': '#6d6d6d',
+        'jorangelt': '#ff9b6e',
+        'jorange': '#eb5202',       
+        'jfuchsia': '#f87179',           
+        'jblue': '#0156c1', 
+        'jbluelt':'#7ab5df', 
+        'jred': '#f19394', 
+        'jredlt': '#87179', 
+        'jdrkp': '#19132a', 
+        'agreylt': '#f8f8f8', 
+        'agreymd': '#e3e3e3',
+        'agrey': '#413a3c', 
+        'apink': '#feeafa', 
+        'ablue': '#ef767a',
+        'aorange': '#e89005',
+        'adrk': '#777',
+        'alavlt': '#f8ebff',
+        'jblucrn': '#93b6ea',      
+        'jblultdash': '#ebf3fc',
+        'jbludash': '#3489ff',           
+      },
+      spacing: {
+        '600': '600px',
+        '400': '400px',  
+        '500': '500px', 
+        '10vw': '10vw', 
+        '1calc': '7vw + 1rem',                                 
+      },
+      lineHeight: {
+        '20': '4rem',         
+      },
+      aspectRatio: {
+        '4/3': '4 / 3',         
+      }
+    },
+  },
+  plugins: [],
+}
